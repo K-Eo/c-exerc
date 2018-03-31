@@ -1,13 +1,9 @@
-OBJECTS = $(patsubst %.c, %, $(wildcard *.c))
+OBJECTS = $(patsubst src/%.c, %, $(wildcard src/*.c))
 
-build: create_build $(OBJECTS)
+build: $(OBJECTS)
 
-%: %.c
-	gcc -o "build/$@" $< -lm
-
-create_build:
-	mkdir -p build
+%: src/%.c
+	gcc -o $@ $< -lm
 
 clean:
-	find . -type f -name "*.o" -delete
-	rm -r build/
+	rm e*
