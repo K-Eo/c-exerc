@@ -7,8 +7,8 @@ int main(int argc, char **argv) {
     return -1;
   }
 
-  int a = atoi(argv[1]);
-  int b = atoi(argv[2]);
+  float a = atof(argv[1]);
+  float b = atof(argv[2]);
 
   printf("+: %d\n", a + b);
   printf("-: %d\n", a - b);
