@@ -9,7 +9,7 @@ $ make
 ### Ejecutar
 
 ```bash
-$ build/e{1, 2, 3, 4, ...}
+$ ./e{01, 02, 03, 04, ...} args
 ```
 
 ### Limpiar
