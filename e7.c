@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
   if (argc < 2) {
     printf("Uso: e7 num\n");
-    return -1;
+    return 1;
   }
 
   char *number = argv[1];

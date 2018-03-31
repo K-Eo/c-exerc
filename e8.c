@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
   if (argc < 4) {
     printf("Uso: e8 radio generatriz altura\n");
-    return -1;
+    return 1;
   }
 
   float radius = atof(argv[1]);

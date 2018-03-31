@@ -7,7 +7,7 @@
 int main(int argc, char **argv) {
   if (argc < 2) {
     printf("Uso: e9 radio\n");
-    return -1;
+    return 1;
   }
 
   float radius = atof(argv[1]);

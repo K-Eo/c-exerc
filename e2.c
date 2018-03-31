@@ -4,7 +4,7 @@
 int main(int argc, char **argv) {
   if (argc < 3) {
     printf("Uso: e2 venta pago \n");
-    return -1;
+    return 1;
   }
 
   float selling = atof(argv[1]);

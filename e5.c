@@ -4,7 +4,7 @@
 int main(int argc, char **argv) {
   if (argc < 5) {
     printf("Uso: e5 dis min seg cen\n");
-    return -1;
+    return 1;
   }
 
   float distance = atoi(argv[1]);

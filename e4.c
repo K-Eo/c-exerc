@@ -7,7 +7,7 @@
 int main(int argc, char **argv) {
   if (argc < 2) {
     printf("Uso: e4 usd\n");
-    return -1;
+    return 1;
   }
 
   float usd = atof(argv[1]);

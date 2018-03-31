@@ -13,7 +13,7 @@ struct Point parse_point(char *point_as_string);
 int main(int argc, char **argv) {
   if (argc < 4) {
     printf("Uso: e10 ax,ay bx,by cx,cy\n");
-    return -1;
+    return 1;
   }
 
   struct Point a = parse_point(argv[1]); 
